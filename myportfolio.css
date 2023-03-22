@@ -1,0 +1,703 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.maincontainer{
+    width:100vw;
+    height:100vh;
+}
+.container{
+    background-color: black;
+    width:100%;
+    height:100vh;
+    position:relative;
+    align-items: center;
+}
+.toggle{
+    display:none;
+    position: fixed;
+}
+.line{
+    background-color: aliceblue;
+    display:flex;
+    flex-direction: column;
+    width:20px;
+    height:5px;
+    margin:3px 0;
+    color:white;
+}
+.header{
+    height:100px;
+    position:static;
+}
+.header ul{
+    display:flex;
+    justify-content: right;
+}
+.header ul li{
+    list-style:none;
+    margin:15px;
+    position:relative;
+    right:50px;
+    top:40px;
+    font-size: 25px;
+}
+.header ul li a{
+    color:white;
+    text-decoration: none;
+}
+.hrr{
+    color:rgb(237, 79, 79);
+}
+.header ul li a:hover{
+    color:green;
+}
+.header ul li  hr:hover{
+   display:inline-block;
+   color:white;
+}
+.picc{
+    border-radius:200px;
+    height:250px;
+    width:250px;
+}
+.info{
+    position: relative;
+    left:50px;
+}
+.content{
+    margin:150px;
+    position:relative;
+    color:white;
+    display:flex;
+    justify-content: center;
+    width:60%;
+    height:250px;
+    gap:20px;
+}
+.about{
+    background-color: black;
+    border:30px solid rgb(21, 20, 20);
+    padding:0 140px;
+    margin-bottom: 40px;
+}
+.abouthead{
+    text-align: center;
+    font-size: 35px;
+    color:white;
+    padding:0 100px;
+
+}
+.abouthead h2:hover{
+    color:green;
+    transition:0.4s;
+    box-shadow: rgba(62, 237, 4, 0.25) 0px 50px 100px -20px, rgba(36, 219, 3, 0.3) 0px 30px 60px -30px, rgba(69, 250, 4, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+}
+.skillshead{
+    position:relative;
+    padding:0 150px;
+    color:aliceblue;
+    font-size: 30px;
+    margin-top:30px;
+
+}
+.skillsname{
+    padding:0 270px;
+}
+.sn{
+    color:aliceblue;
+    margin:6px;
+}
+.sk{
+    display:flex;
+}
+.percent{
+    width:200px;
+    height:5px;
+    color:aquamarine;
+}
+.c{
+    width:250px;
+    height:250px;
+    opacity:.4;
+    border-radius: 10px;
+}
+.c1:hover .c{
+    opacity:1;
+    background-color: black;
+}
+
+
+.c1{
+    color:aliceblue;
+    background-color: rgb(59, 61, 62);
+    padding:6px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+}
+.cpara{
+    width:250px;
+}
+.c1 .on{
+    position: absolute;
+    z-index:2;
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+    opacity:0;
+}
+.c1:hover .on{
+    opacity: 1;
+}
+
+.certihead{
+    color:white;
+    font-size: 30px;
+    padding:0 150px;
+    margin-top:40px;
+}
+.certis{
+    display:flex;
+    position:relative;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-around;
+    margin-top:40px;
+    padding:0 180px;
+}
+.pro{
+    color:antiquewhite;
+    margin:5px;
+}
+.phead{
+    color:aliceblue;
+    font-size: 40px;
+    padding:0 150px;
+    margin-top: 40px;
+}
+.pnames{
+    padding:0 210px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+.resume{
+    background-color: black;
+    color:aliceblue;
+    padding:0 200px;
+}
+.resumehead{
+    text-align: center;
+    font-size: 40px;
+    color:white;
+    background-color: rgb(0, 0, 0);
+}
+
+.resumemain{
+    border:15px solid gray;
+    
+}
+.top{
+    display:flex;
+}
+.topleft{
+    width:40%;
+    text-align: center;
+    position: relative;
+    top:15px;
+}
+.topright{
+    width:60%;
+}
+.imgg{
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+}
+.topright{
+    text-align: center;
+}
+.toprightcontent{
+    margin-top:100px;
+}
+.bottom{
+    display:flex;
+    flex-direction: row;
+    height:850px;
+    margin-top: 30px;
+}
+.bottomleft{
+    text-align: center;
+    background-color: rgb(82, 80, 80);
+    width:40%;
+    
+}
+.bottomleftname{
+    margin-top:100px;
+}
+.bottomlefttop{
+    margin-top:100px;
+}
+.bottomleftbottom{
+    margin-top:100px;
+}
+.download{
+    width:100%;
+    text-align: center;
+}
+.download{
+    background-color: rgb(211, 209, 209);
+}
+
+.downres:hover{
+     background-color: rgb(191, 235, 220);
+     color:green;
+     transition:0.4s;
+}
+.aside{
+    width:120px;
+    height:100vh;
+    position:fixed;
+    left:-1000px;
+    top:0;
+    background: rgb(205, 191, 191);
+    z-index: 2;
+    transition: 0s;
+    display:none;
+}
+.common{
+    position:relative;
+    top:60px;
+}
+.common ul li{
+    color:white;
+    flex-basis: 50%;
+    width:250px;
+    margin:8px;
+    flex-wrap: wrap;
+}
+.common ul{
+    margin-left: 50px;
+}
+.bottomright{
+    background-color: rgb(10, 10, 10);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 60%;
+}
+.common h3{
+    color:antiquewhite;
+    margin-left:30px;
+    margin-bottom:20px;
+}
+.contact{
+    background-color: rgb(96, 97, 98);
+    color:aliceblue;
+    padding:0 200px;
+    height:200px;
+}
+.contacthead{
+    text-align: center;
+    position:relative;
+    top:30px;
+}
+.contactmain{
+    display:flex;
+    position:relative;
+    top:30px
+}
+.cont{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis:50%;
+    position:relative;
+    top:30px;
+    left:80px;
+}
+.spac{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis:50%;
+    position:relative;
+    top:30px;
+    left:150px;
+
+}
+.aboutpage{
+    margin-top:15px;
+    margin-left:30px;
+}
+.aboutpage ul li{
+    margin:2px;
+}
+.conte{
+    font-size: 20px;
+    font-weight: bold;
+}
+.mail{
+    display:flex;
+    gap:10px;
+    text-decoration: none;
+}
+.link{
+    display:flex;
+    gap:10px;
+}
+.mail a{
+    text-decoration: none;
+    color:aliceblue;
+    margin:3px;
+}
+.link a{
+    text-decoration: none;
+    color:aliceblue;
+    margin:3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:450px){
+    .resumemain{
+        padding:0 0px;
+    }
+    .skillshead{
+        font-size: 25px;
+        padding:0 30px;
+    }
+    .abouthead{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:600px){
+    
+    .aside{
+        display:block;
+        margin-top:50px;
+        height:25%;
+        width:100%;
+        background-color: rgb(0, 0, 0);
+        color:white;
+    }
+    .topp{
+        color:white;
+    }
+    .aside nav ul li{
+        list-style: none;
+        margin:10px;
+        text-align: center;
+    }
+    .aside nav ul li a{
+        text-decoration: none;
+        color:rgb(236, 233, 233);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .aside nav ul li a:hover{
+        background-color: rgb(0, 0, 0);
+        padding:4px;
+        border-radius: 4px;
+        color:green;
+
+    }
+    .aside nav{
+        margin-top: 15px;
+    }
+    .toggle{
+        display:block;
+        position:relative;
+        float: right;
+        right:30px;
+        top:20px;
+        cursor:pointer;
+    }
+    .line{
+        border-radius: 3px;
+    }
+     .header ul{
+        display:none;
+     }
+     .container{
+        position:relative;
+        top:0px;
+     }
+     .content{
+        display:block;
+        padding:0;
+        margin:120px 90px;
+     }
+     .pic{
+        width:150px;
+        height:100px;
+        position:relative;
+        left:50px;
+     }
+     .info{
+        height:auto;
+        padding:0 0;
+        position:relative;
+        left:2px;
+        top:50px;
+     }
+     .resume{
+        padding:0;
+     }
+     .top{
+        display:flex;
+        text-align: center;
+     }
+     .bottom{
+        display:flex;
+     }
+     
+     
+     .imgg{
+        width:100px;
+        height:100px;
+        position: relative;
+        left:10px;
+     }
+     
+     .topright{
+        text-align: center;
+        width:100%;
+        padding-right:10px
+     }
+
+    .container{
+        width:100%;
+    }
+    .header ul li{
+        list-style:none;
+        position:relative;
+        font-size: 20px;
+    }
+    .header ul li a{
+        padding:7px;
+    
+    }
+    
+    .downres{
+        border:3px solid green;
+        width:100px;
+        border-radius: 8px;
+        background-color: rgb(58, 170, 189);
+    }
+    
+    .contactmain{
+        display:flex;
+        flex-direction: column;
+
+        
+    }
+    .contact{
+        background-color: rgb(96, 97, 98);
+        color:aliceblue;
+        padding:0 100px;
+        height:300px;
+    }
+    .contacthead{
+        text-align: center;
+        position:relative;
+        top:30px;
+    }
+    
+    .cont{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis:0%;
+        position:relative;
+        top:30px;
+        left:80px;
+    }
+    .spac{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis:50%;
+        position:relative;
+        top:60px;
+        left:80px;
+    
+    }
+    .mail{
+        display:flex;
+        gap:20px;
+    }
+    .link{
+        display:flex;
+        gap:20px;
+    }
+    .mail h2{
+        font-size: 18px;
+    }
+    .link h2{
+        font-size: 20px;
+    }
+}
+
+
+@media(max-width:700px){
+    .picc{
+        width:140px;
+        height:140px;
+    }
+   
+    .skillshead{
+        padding:0 50px;
+    }
+    .certihead{
+        padding:0 50px;
+    }
+    .phead{
+        padding:0 50px;
+    }
+    .skillsname{
+        padding:0 120px
+    }
+    .certis{
+        padding:0 80px;
+    }
+}
+@media(max-width:750px){
+    .contact{
+        padding:0 50px
+    }
+}
+@media(max-width:850px){
+    .resumemain{
+        margin:0;
+        padding:0;
+        border:3px solid gray;
+    }
+    .top{
+        position: relative;
+        display:flex;
+        flex-basis:50%;
+    }
+    .topleft{
+        flex-basis: 50%;
+    }
+    .topright{
+        flex-basis: 50%;
+        margin-left:30px;
+    }
+    .toprightcontent{
+        margin-top:30px;
+    }
+    .abouthead{
+        font-size: 30px;
+        margin:0;
+        padding:0 0px;
+    }
+    .about{
+        padding:0 px;
+        padding:0 0;
+        
+    }
+   
+}
+@media(max-width:350px){
+    .top{
+        display:flex;
+        flex-direction: column;
+    }
+    .topright{
+        padding-right:20px;
+    }
+    .content{
+        margin:0;
+        position: relative;
+        left:30px
+    }
+    .info{
+        position:relative;
+        left:10px;
+        top:10px
+    }
+    .picc{
+        position:relative;
+        left:50px;
+    }
+    .aside{
+        width:100px;
+        position:relative;
+        margin:0 120px;
+        margin-top:10px;
+    }
+    .abouthead{
+        font-size: 30px;
+        margin:0;
+        padding:0 0px;
+    }
+    .about{
+        padding:0 px;
+        padding:0 0;
+        
+    }
+   
+}
+@media(max-width:1000px){
+    .resume{
+        padding:0;
+     }
+     .resumemain{
+        border:3px solid gray;
+     }
+     .top{
+        display:flex;
+        text-align: center;
+     }
+     .bottom{
+        display:flex;
+     }
+     
+     
+     .imgg{
+        width:100px;
+        height:100px;
+        position: relative;
+        left:10px;
+     }
+     
+     .topright{
+        text-align: center;
+        width:100%;
+        padding-right:10px
+     }
+}
+
